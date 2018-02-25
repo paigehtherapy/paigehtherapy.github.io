@@ -13,6 +13,12 @@
             <li><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
             {% endif %}
             {% endfor %}
+            <li><a href="mailto:{{ site.email }}" class="icon fa-envelope-o"> {{ site.email }}
+                <span class="label">E-mail</span>
+            </a></li>
+            <li><a href="tel:+2062497793" class="icon fa-phone"> {{ site.phone }}
+                <span class="label">Phone</span>
+            </a></li>
           </ul>
         </div>
       </li>

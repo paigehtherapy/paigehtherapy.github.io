@@ -1065,6 +1065,12 @@ $baseurl: '{{ site.baseurl }}/images';
 					color: _palette($p, fg-light);
 				}
 
+				&.light {
+					h2, h3, h4, h5, h6 {
+						color: #d8dbdf;
+					}
+				}
+
 				&.major {
 					h2, h3, h4, h5, h6 {
 						border-color: _palette($p, border);
@@ -1290,7 +1296,7 @@ $baseurl: '{{ site.baseurl }}/images';
 	}
 
 	#menu {
-		@include vendor('transform', 'translateX(20em)');
+		@include vendor('transform', 'translateX(23em)');
 		@include vendor('transition', 'transform #{_duration(menu)} ease');
 		-webkit-overflow-scrolling: touch;
 		background: _palette(accent1, bg);
@@ -1302,7 +1308,7 @@ $baseurl: '{{ site.baseurl }}/images';
 		position: fixed;
 		right: 0;
 		top: 0;
-		width: 20em;
+		width: 23em;
 		z-index: _misc(z-index-base) + 2;
 
 		ul {
