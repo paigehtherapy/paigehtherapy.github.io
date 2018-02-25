@@ -7,7 +7,7 @@
     <li><a href="mailto:{{ socloc[1] }}" class="icon fa-envelope-o"> {{ socloc[1] }}<span class="label">E-mail</span></a></li>
     {% else %}
     {% if socloc[0] == 'phone' %}
-    <li><a href="tel:+2062497793" class="icon fa-phone"> {{ socloc[1] }}<span class="label">Phone</span></a></li>
+    <li><a href="tel:{{ site.phone }}" class="icon fa-phone"> {{ socloc[1] }}<span class="label">Phone</span></a></li>
     {% else %}
     <li><a target="_blank" href="{{ socloc[1] }}" class="icon fa-{{ socloc[0] }}"
            ><span class="label">{{ socloc[0] }}</span></a></li>
