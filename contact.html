@@ -1,0 +1,47 @@
+---
+layout: page
+title: Contact
+---
+
+<section>
+    <div class="row">
+        <div class="6u 12u$(medium)">
+            <h3>Ready to schedule an appointment?</h3>
+            <ul class="actions">
+                <li><a href="{{ site.baseurl }}/learnmore.html" class="button fit special">Schedule</a></li>
+            </ul>
+            <header>
+                <a href="mailto:{{ site.email }}" class="icon fa-envelope-o"> {{ site.email }}
+                        <span class="label">E-mail</span>
+                    </a>
+                <div><a href="tel:{{ site.phone }}" class="icon fa-phone"> {{ site.phone }}
+                        <span class="label">Phone</span>
+                </a></div>
+            </header>
+            <p>
+                <p>Seattle, Washington</p>
+                <p>Kirkland, Washington</p>
+            </p>
+        </div>
+        <div class="6u 12u$(medium)">
+            <h3>Have Questions?</h3>
+            <form action="https://formspree.io/paigehtherapy@gmail.com" method="POST">
+                <input type="text" name="name" placeholder="Your name">
+                <input type="email" name="email" placeholder="Your email">
+                <input type="text" name="phone" placeholder="Your phone number">
+                <select name="service" required>
+                    <option value="No service selected" disabled selected hidden>Select a type of service</option>
+                    <option value="Children &amp; Adolescents">Children &amp; Adolescents</option>
+                    <option value="Family">Family</option>
+                    <option value="Couples">Couples</option>
+                    <option value="Individual">Individuals</option>
+                </select>
+                <textarea name="message" placeholder="Comments/Questions"></textarea>
+                <input type="hidden" name="_next" value="{{ site.baseurl }}/thankyou.html" />
+                <input type="hidden" name="_subject" value="Webpage submission: New client contact!" />
+                <br/>
+                <button type="submit" class="button fit special">Send</button>
+          </form>
+        </div>
+    </div>
+</section>
